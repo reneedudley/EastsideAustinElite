@@ -60,13 +60,11 @@ footer.page-footer {
 }
 
 
-/*#home{
-  position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}*/
+.full{
+    /*background-size:cover;
+  position:relative;*/
+  height:70vh;
+}
 
 #crossfitRow{
   background-image: url("http://mrgaleano.weebly.com/uploads/3/7/6/7/37676609/6352727_orig.jpg");
@@ -76,8 +74,12 @@ footer.page-footer {
 #mmaRow{
   background-image: url("http://www.doubledragon.com.au/img/kickboxing/double-dragon-kickboxing-muay-thai08.jpg");
   height: 75px;
+  
 }
 #kidRow{
   background-image: url("http://kellysmma.com/wp-content/uploads/2015/08/IMG_5276.jpg");
   height: 75px;
+}
+.toc{
+  position: fixed;
 }

@@ -5,13 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-#green{
-  background-color: #fff9db;
-  margin-bottom: 10px;
-}
-.bl{
-  background-color: blue;
-}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -22,7 +16,7 @@ p {
 }
 
 .button-collapse {
-  color: #cfe2ab;
+  color: black;
 }
 
 .navbar{
@@ -40,7 +34,7 @@ p {
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-    position: absolute;
+    /*position: absolute;*/
     top: 40%;
   }
   #index-banner .section {
@@ -65,94 +59,25 @@ footer.page-footer {
   margin: 0;
 }
 
-#logo-container{
-  font-family: 'Alice', serif;
-  letter-spacing:5px;
-  font-size:18px;
-  display: none;
-  color: #a68a62;
-}
-#nav-mobile{
-  font-family: 'Alice', serif;
-}
-#nbar{
-  font-family: 'Alice', serif;
-}
-#Gina{
-  font-family: 'Satisfy', cursive;
-}
-#hair{
-  font-family: 'Amatic SC', cursive;
-  color: #2a4048;
-}
-#home{
 
-  margin-bottom: 10px;
-  background-color: blue
-  ;
-}
-#middle{
-  margin-bottom: 10px;
-}
-#mid{
-  margin: 0px;
-  padding: 0px;
-}
-#tag{
-  font-family: 'Alice', serif;
-  color: white;
-}
-#frizz{
-  opacity: .5;
-}
+/*#home{
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}*/
 
-.normal{
-  padding-top: 13%;
-  padding-bottom: 13%;
-  margin-bottom: 20px;
-}
-
-.head1{
-  font-family: 'Alice', serif;
-}
-#about{
-  color:#a68a62;
+#crossfitRow{
+  background-image: url("http://mrgaleano.weebly.com/uploads/3/7/6/7/37676609/6352727_orig.jpg");
+  height: 75px;
 
 }
-#girl{
-  margin-bottom: 10px;
+#mmaRow{
+  background-image: url("http://www.doubledragon.com.au/img/kickboxing/double-dragon-kickboxing-muay-thai08.jpg");
+  height: 75px;
 }
-#services{
-  color: #a2bf6c;
-  background-color: #fffcef;
-   margin-bottom: 10px;
-}
-#serv{
-  text-align: center;
-  font-family: 'Alice', serif;
-  color:#a68a62;
-}
-.spec{
-  text-align: center;
-  font-family: 'Alice', serif;
-  color:#a68a62;
-  opacity: .8;
-  font-size: 15px;
-}
-#stair{
-  margin-bottom: 10px;
-}
-#last{
-  background-color: #fffdf6;
-}
-#con{
-  color:#a68a62;
-}
-
-#foot{
-  background-color: #fff9db;
-}
-#all{
-  color:#a68a62;
-  font-size: 10px;
+#kidRow{
+  background-image: url("http://kellysmma.com/wp-content/uploads/2015/08/IMG_5276.jpg");
+  height: 75px;
 }

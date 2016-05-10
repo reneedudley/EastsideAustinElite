@@ -9,6 +9,9 @@
   background-color: #fff9db;
   margin-bottom: 10px;
 }
+.bl{
+  background-color: blue;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -22,6 +25,9 @@ p {
   color: #cfe2ab;
 }
 
+.navbar{
+  background-color: transparent;
+}
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -82,7 +88,8 @@ footer.page-footer {
 #home{
 
   margin-bottom: 10px;
-  background-color: #fff9db;
+  background-color: blue
+  ;
 }
 #middle{
   margin-bottom: 10px;

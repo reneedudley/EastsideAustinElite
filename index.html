@@ -8,98 +8,1294 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100|Satisfy|Amatic+SC' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600|Just+Another+Hand|Alegreya+Sans+SC:400,300,100|Kameron|Pompiere|Cutive+Mono' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
   <!-- Favicon -->
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 </head>
 <body>
-  <div id="splash">
-    <div class="navbar-fixed" >
+    <div class="navbar">
       <nav  role="navigation" class="z-depth-0">
         <div class="nav-wrapper container ">
-          <ul id="slide-out" class="side-nav">
-            <li><a href="#!">First Sidebar Link</a></li>
-            <li><a href="#!">Second Sidebar Link</a></li>
+          <ul id="slide-out" class="side-nav #263238 blue-grey darken-4">
+            <li><a href="http://instagram.com/eliteatx"><i class="fa fa-instagram insta" aria-hidden="true"></i></a></li>
+            <li><a href="http://facebook.com/eastsideaustinelite"><i class="fa fa-facebook-official insta" aria-hidden="true"></i></a></li>
+            <li><a id="programsMenu" href="#!">Programs</a></li>
+            <li><a id="pricingMenu"href="#!">Pricing</a></li>
+            <li><a id="personalMenu"href="#!">Personal Training</a></li>
+            <li><a href="#!">Class Schedule</a></li>
+            <li><a id="contactMenu" href="#!">Contact us</a></li>
+            <li class="list-bottom"><a id="blogMenu" href="#!">Blogs & WODs</a></li>
+
+            <div class="slide-out-button free-week"><a href="#!" class="btn #006064 cyan darken-4" >Get Your Free Week</a></div>
+            <li><a class="dropdown-button btn #006064 cyan darken-4" href="#!" data-activates="dropdown1" >Sign In<i class="material-icons right">arrow_drop_down</i></a></li>
+
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="https://clients.mindbodyonline.com/classic/home?studioid=37332" target="_blank">Mind Body Online</a></li>
+              <li><a href="http://beyondthewhiteboard.com/signin" target="_blank">Beyond The Whiteboard</a></li>
+            </ul>
           </ul>
           <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
         </div>
       </nav>
     </div>
     <div class="container">
-      <div class="section">
-        <div class="container">
+        <div class="container center">
+          <img src="logo.jpg" class="responsive-img" id="logo">
+          <div class="row center" id="mainTitle">
+            <div class="col s12">
+              <h2 class="lead-header">Eastside Austin Elite</h2>
+              <h2 class="lead-tag">MMA & Exitium CrossFit</h2>
+              <h5 class="tagline">{Choose Your Arena}</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <a href="#!" id="crossFitButton">
+              <img src="cfarena.jpg" class="responsive-img ">
+              <p>CrossFit</p>
+              </a>
+            </div>
+            <div class="col s6 move-down">
+              <a href="#!" id="mmaButton">
+                <img src="mmaarena.jpg" class="responsive-img ">
+                <p>MMA</p>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <a href="#!" id="personalButton">
+                <img src="personalarena.jpg" class="responsive-img">
+                <p>Personal Training</p>
+              </a>
+            </div>
+            <div class="col s6 move-down">
+              <a href="#!" id="kidsButton">
+                <img src="kidsarena.jpg" class="responsive-img ">
+                <p>Kids MMA</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CrossFit Page -->
+      <div id="CrossFitPage" class="hide">
+        <div class="parallax-container">
+            <h5 class="started center valign">Welcome to the community of people who have decided that easy will no longer suffice.</h5>
+          <div class="parallax"><img src="boxjump.jpg"></div>
+        </div>
+        <div class="container section" id="philosophy">
           <div class="row center">
-            <div class="col s12">
-              <h2>Eastside Austin Elite</h2>
-              <h5>{Choose Your Arena}</h5>
-            </div>
+            <p>Welcome to Exitium CrossFit Austin, part of Eastside Austin Elite. At Eastside Austin Elite, whether you’re a beginner or very advanced you will always receive intense workouts that will challenge you while being appropriate for your level of fitness and skill.</p>
+            <p>Learn more about our CrossFit program below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
           </div>
-          <div class="row center z-depth-3" id="crossfitRow" >
-            <div class="col s12">
-              <h5>CrossFit</h5>
+        </div>
+
+        <div class="parallax-container full section" id="elited">
+          <div class="row center">
+            <div class="parallax">
+              <img src="kip.jpg">
             </div>
-          </div>
-          <div class="row center z-depth-3" id="mmaRow" >
-            <div class="col s12">
-              <h5>MMA</h5>
-            </div>
-          </div>
-          <div class="row center z-depth-3" id="kidRow" >
-            <div class="col s12">
-              <h5>Kid's MMA</h5>
+            <h3 class="started">Why CrossFit?</h3>
+            <div class="col s6 back">
+              <p>Our CrossFit program will maximize every work out. It is designed to practice and train major lifts, master the basics of gymnastics, as well as running and rowing techniques. Routine is the enemy, workouts will be kept short, intense, and fun.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
             </div>
           </div>
         </div>
-        <!-- CrossFit Page -->
-        <div id="crossFit">
-          <div class="col hide-on-small-only m2 l2 toc " >
-            <ul class="section table-of-contents ">
-              <li><a href="#philosophy">Philosophy</a></li>
-              <li><a href="#elited">The elite difference</a></li>
-              <li><a href="#started">get started</a></li>
-            </ul>
+        <div class="parallax-container full section " id="started">
+          <h3 class="started2 center">Why EAE?</h3>
+            <div class="back2 center">              
+              <p class="whyEAE">You won't find anything like our CrossFit facility in Austin. We have a state of the art 3,000 sqft fully airconditioned indoor facility, a dedicated running track, and a fully stocked 1,000 sqft outdoor rig. Our supportive and fun community is what truly sets us apart from any other training experience.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="parallax"><img src="ball.jpg"></div>
+        </div>
+        <div class="container" >
+          <div class="section">
+            <div class="row">
+              <div class="col s12 m4 l4" >
+                <div class="icon-block center">
+                  <i class=" center fa fa-money fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">Prices</h5>
+                    <p class="center">Simply put, we are the best deal in town. We strive to provide an excellent experience for a fair price. Check out our prices below and be sure to <a href="#!">subscribe</a> to our Newsletter to get exclusive deals!</p>
+                </div> 
+              </div>
+              <div class="col s12 m4 l4">
+                <div class="icon-block center">
+                <i class="center fa fa-spinner fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">A Complete Training Experience</h5>
+                    <p class="center">We want to make sure that you are reaching your CrossFit goals in a safe and sustainable manner. We encourage all of our athletes to attend complementary yoga and mobility classes. We also have a great team of Personal Trainers availble to help you with any fitness goal that you may have. Check them out <a href="#!">here!</a> </p>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 " >
+                <div class="icon-block center">
+                <i class="center fa fa-arrows-alt fa-2x" aria-hidden="true"></i>
+                 <h5 class="center fac">A Track To Fit Your Needs</h5>
+                   <p class="center">Everyone has different fitness goals. We have a traditional CrossFit track for athletes that are just starting their CrossFit journey or are focused on gaining athletecism and strength. We also have a CrossFit competitors track for those interested in a more advanced team enviroment.</p>   
+                </div>
+              </div>
+            </div>
+            <div class="center">
+            <p>Checkout Our Unbeatable Prices Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
           </div>
-          <div class="container full section scrollspy" id="philosophy">
-            <div class="row center">
-              <h5>our philosophy</h5>
-              <p>At Eastside Austin Elite, blah blah blah blah blah </p>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="hand.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">We are so much more than a CrossFit Box...</h2>
+              <p>Check out our blog to find out more</p>
+              <a class="btn">EAE Blog</a>
             </div>
           </div>
-          <div class="container full section scrollspy" id="elited">
+        </div>
+        <div class="parallax-container section" id="crossFit-Pricing">
+              <div class="center col s6"> 
+                <div class="back3">
+                  <h4 class="prices-header">CrossFit Fundamentals</h4>   
+                  <h5 class="prices-follow">Includes two small group sessions. This is not required to start taking CrossFit classes at EAE, however for safety reasons, it's highly recommended before you start your training regimine with us.</h5>
+                </div> 
+                <div class="prices-list">
+                  <p>$40</p>
+                </div>
+              </div>
+              <div class="center col s6"> 
+                <div class="back3">
+                  <h4 class="prices-header">CrossFit Fitness Track</h4>   
+                  <h5 class="prices-follow">Includes unlimited CrossFit and Yoga classes</h5>
+                </div> 
+                <div class="prices-list">
+                  <p>$97/mo with a 12 mo contract</p>
+                  <p>$118/mo with a 6 mo contract</p>
+                  <p>$150/mo with a month-month agreement</p> 
+                </div>
+              </div>
+              <div class=" center col s6">
+                <div class="back3">
+                  <h4 class="prices-header">CrossFit Performance Team</h4>     
+                  <h5 class="prices-follow">Includes unlimited CrossFit, CrossFit Competitors, Olympic Lifting, & Yoga classes {Instructor Permission Required}</h5>
+                </div> 
+                <div class="prices-list">
+                  <p>$152/mo with a 12 mo contract</p>
+                  <p>$173/mo with a 6 mo contract</p>
+                  <p>$205/mo with a month-month agreement</p>
+                </div>
+              </div>
+              <div class="center col s6"> 
+                <div class="back3">
+                  <h4 class="prices-header">CrossFit & MMA</h4>   
+                  <h5 class="prices-follow">Includes unlimited CrossFit, <a href="#!">MMA,</a> & Yoga classes</h5>
+                </div> 
+                <div class="prices-list">
+                  <p>$135/mo with a 12 mo contract</p>
+                  <p>$165/mo with a 6 mo contract</p>
+                  <p>$220/mo with a month-month agreement</p> 
+                   <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+                </div>
+              </div>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="rig.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">Getting Started Has Never Been Easier</h2>
+            </div>
+            <div class="col s6 back center">
+              <p>Sign up for a free week, pick a class that fits your schedule here, bring your workout clothes, and be sure to arrive 15-20 min prior to your class.<br> Never been to a CrossFit class? That's totally fine, our instructors are great with beginners and our classes are all levels. We would also suggest attending a CrossFit Fundamentals course. </p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+           </div>
+          </div>
+        </div>
+        <div class="container">
+           <div class="section center">
             <div class="row center">
-              <h5>the Elite difference</h5>
-              <p>At Eastside Austin Elite, blah blah blah blah blah </p>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+              <a href="#" class="btn #006064 cyan darken-4">Get Your Free Week Here</a>
+            </div>
+            <div class="row center">
+              <a href="#" class="btn #006064 cyan darken-4">Sign up for our newsletter!</a>
+            </div>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="container section full">
+          <div class="section">
+            <div class="row center classSchedule">
+              <h3 class="fac">Class Schedule</h3>
             </div>
           </div>
-          <div class="container full section scrollspy" id="started">
+          <div class="section center">
+            <p>Read About Our CrossFit Trainers Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax"><img src="judge.jpg"></div>
+          <div class="row ">
+            <div class="col s12">
+              <h2 class="started center">Meet The Team!</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="back2 col s6 center">
+              <p>Our CrossFit instructors such an integral key to the community that we have fostered at Eastside Austin Elite. We encourage you to read their bios and get to know them as they will be leading you down your training journey.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container section">
+          <p>[Trainer Carosel]</p>
+          <!-- <div class="row center">
+            <div class="col s12 center">
+              <div class="carousel js-flickity"
+                   data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }' >
+                <div class="carousel-cell"><a href="#modal1" class="modal-trigger"><img src="bri.jpg"><p class="trainer">Brianna Larson</p></a></div> 
+                <div class="carousel-cell"><a href="#modal2" class="modal-trigger"><img src="vince.jpg"><p class="trainer">Vince Barbosa</p></a></div>
+                <div class="carousel-cell"><a href="#modal3" class="modal-trigger"><img  src="Justin.jpg"><p class="trainer">Justin Kerr</p></a></div>
+                <div class="carousel-cell"><a href="#modal4" class="modal-trigger"><img src="katie.jpg"><p class="trainer">Katie Fincher</p></a></div>
+                <div class="carousel-cell"><a href="#modal5" class="modal-trigger"><img src="sean.jpg"><p class="trainer">Sean McEachern</p></a></div>
+                <div class="carousel-cell"><a href="#modal6" class="modal-trigger"><img src="ashley.jpg"><p class="trainer">Ashley Rollins</p></a></div>
+            </div>
+            <div id="modal1" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Brianna Larson</h4>
+                <p class="popup-p"><strong>CrossFit Instructor</strong></p>
+                <p class="popup-p">Brianna was born and raised in Texas and is currently completing her undergraduate degree at Texas State University. She has always been involved in sports and related activities from competitive cheerleading to track and field. In May 2011, she was introduced to CrossFit in San Marcos and has loved it ever since. Brianna successfully completed the CrossFit Level 1 Trainer Course in August 2013. Bri believes CrossFit is more than just a place to workout….it’s a community that continually encourages everyone to challenge themselves physically, mentally and emotionally. Outside of the gym, Bri enjoys cooking, baking, hiking, time with family and friends, bacon, and anything involving the sunshine. 
+                CrossFit Level 1 Instructor</p>
+              </div>
+            </div>
+            <div id="modal2" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Vince Barbosa</h4>
+                <p class="popup-p"><strong>Lead CrossFit Instructor & Manager</strong></p>
+                <p class="popup-p">Vince Barbosa is an Eastside Austin Elite CrossFit instructor. He is a CrossFit Level 1 Trainer and a nationally registered Paramedic. He is a prior USAF Pararescueman. While deployed he participated in a series of joint Operations, including direct assaults and combat search and rescue missions. His team also participated in disaster relief efforts and humanitarian missions Stateside. You can find him in the weight room or on the mat training jiu-jitsu as part of our competition team. Vince focuses on the positive to help our members improve their capability and have a good time!
+                 REGISTERED PARAMEDIC<br>USAF PARA RESCUE</p>
+              </div>
+            </div>
+            <div id="modal3" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Justin Kerr</h4>
+                <p class="popup-p"><strong>CrossFit Level 1 Instructor</strong></p>
+                <p class="popup-p">Justin Kerr is born and raised in Austin, TX and has successfully passed and completed the CF-L1 Course. His future goals with CrossFit are to gain more certifications in Gymnastics, Kids, and Olympic lifting. He was introduced to CrossFit in 2012 but didn’t start actively training CrossFit until June 2013. His first competition was Nasty Girls at a local event back in February 2013. Just like any other person exposed to CrossFit, he was exhausted and had the adrenaline feeling during and after the WOD. He also enjoys the community aspect that CrossFit brings to every box. He believes that anything is possible when you work hard for it. In pursuit of being an instructor, he enjoys helping others to be better with life. Things outside the gym, he likes to have active rest days by running, road biking, kayaking, and paddle boarding out about Town Lake.
+                </p>
+              </div>
+            </div>
+            <div id="modal4" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Katie Fincher</h4>
+                <p class="popup-p"><strong>CrossFit Instructor</strong>
+                <p class="popup-p">"I have a passion for showing people that they are capable of pushing themselves more than they ever though possible. Be Brave, Be Strong, & Be Humble."
+                From the day Katie found CrossFit she was hooked. Her goals continue to drive her training. She is committed to helping members set and reach their own goals. She believes that fitness is a lifestyle that is within the reach of everyone. And balance is critical for successful long term lifestyle changes. Balance when learned and implemented, makes you constantly set new limits.
+                <strong>CROSSFIT KETTLE BELL, CROSSFIT GYMNASTICS, AND CROSSFIT MOBILITY CERTIFICATIONS.</strong></p>
+              </div>
+            </div>
+            <div id="modal5" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Sean McEachern</h4>
+                <p class="popup-p"><strong>CrossFit Level 1 Instructor</strong>
+                <p class="popup-p">Sean is Marine Corps veteran, Infantry Machine Gunner by trade but was also a Martial Arts Instructor . He is currently a student at Texas State Univ. studying Exercise and Sports Science (Pre Physical Therapy). Sean has a love for teaching and CrossFit allows him to make a change in people’s life that will have a lasting effect.</p>
+              </div>
+            </div>
+            <div id="modal6" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Ashley Rollins</h4>
+                <p class="popup-p"><strong>Running and Fitness Personal Trainer</strong>
+                <p class="popup-p">Ashley Rollins is a certified personal trainer at Eastside Austin Elite. Originally born and raised in Chicago, Illinois, Ashley came down to Austin to escape the arctic winters and developed a deep love for running and fitness. She received her certification from WITS at the University of Texas in October 2015. Ashley has also been coaching marathoners since 2011 and uses her knowledge of endurance athletes to create functional fitness plans for all levels. Her love of education is boundless -- She is currently working towards several advanced certifications in nutrition and strength and conditioning.
+                </p>
+              </div>
+            </div>
+          </div>
+         </div> -->
+         <p class="center spaced">Got questions? Ready to train? Our contact details are below!</p>
+         <div class="col s12 center"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax">
+            <img src="squat.jpg">
+          </div>
+          <div class="row">
+            <div class="col s12 center"><h3 class="started center">Come Train With Us!</h3></div>
+            <div class="col s6 left back2">
+              <p>We are open 6 days a week and we have over 130 classes a week on our shcedule. We would love for you to come and take a tour, start your free week, or just come and say hi! Got questions before you come? No problem, feel free to call or email us 24/7. 
+            </div>
+          </div>
+          <div class="col s12 center spaced"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <!-- End of CrossFit Page -->
+
+      <!-- MMA page -->
+      <div id="MMAPage" class="hide">
+        <div class="parallax-container">
+            <h5 class="started center valign">Welcome to the community of people who have decided that easy will no longer suffice.</h5>
+          <div class="parallax"><img src="bjj.jpg"></div>
+        </div>
+        <div class="container section" id="philosophy">
+          <div class="row center">
+            <p>Welcome to Eastside Austin Elite's MMA program. At Eastside Austin Elite, whether you’re a beginner or very advanced you will always receive intense workouts that will challenge you while being appropriate for your level of fitness and skill.</p>
+            <p>Learn more about our MMA program below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="parallax-container section" id="elited">
+          <div class="row center">
+            <div class="parallax">
+              <img src="class.jpg">
+            </div>
+            <h3 class="started">Why MMA?</h3>
+            <div class="col s6 back">
+              <p>Our MMA program will challenge you in every way. Our world class instructors have crafted this specialized program that will expose you to all displinces that an MMA fighter would need. Whether you are interested getting in shape or becoming a world class fighter, the Eastside Austin Elite MMA program is the ultimate training experience.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container full section " id="started">
+          <h3 class="started2 center">Why EAE?</h3>
+            <div class="back2 center">              
+              <p class="whyEAE">You won't find anything like our MMA facility in Austin. We have two kickboxing rooms that provide 2,800 sqft of space for striking, a 3,000 sqft state of the art grappaling floor, and the only full sized MMA cage in Austin. However, our supportive and fun community is what truly sets us apart from any other training experience.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="parallax"><img src="mma2.jpg"></div>
+        </div>
+        <div class="container" >
+          <div class="section">
+            <div class="row">
+              <div class="col s12 m4 l4" >
+                <div class="icon-block center">
+                  <i class=" center fa fa-money fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">Prices</h5>
+                    <p class="center">Simply put, we are the best deal in town. We strive to provide an excellent experience for a fair price. Check out our prices below and be sure to <a href="#!">subscribe</a> to our Newsletter to get exclusive deals!</p>
+                </div> 
+              </div>
+              <div class="col s12 m4 l4">
+                <div class="icon-block center">
+                <i class="center fa fa-spinner fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">A Complete Training Experience</h5>
+                    <p class="center">We want to make sure that you are reaching your MMA goals in a safe and sustainable manner. We encourage all of our athletes to attend complementary yoga and mobility classes. We also have a great team of Personal Trainers availble to help you with any goal that you may have. Check them out <a href="#!">here!</a> </p>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 " >
+                <div class="icon-block center">
+                <i class="center fa fa-arrows-alt fa-2x" aria-hidden="true"></i>
+                 <h5 class="center fac">A Program To Fit Your Needs</h5>
+                   <p class="center">Everyone has different fitness goals. We offer all levels and beginners clasees for those just starting out, as well as competetion level classes for athletes that wish to take their training to the next level. If your goal is MMA competetion, with your dedication, our program is designed to help you advance in your MMA skill set as well as advanced competetion exposure.</p>   
+                </div>
+              </div>
+            </div>
+            <div class="center">
+            <p>Checkout Our Unbeatable Prices Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="floor.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">Training on a whole new {Elite} Level</h2>
+              <p>check out our blog to learn more</p>
+              <a class="btn">EAE Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container section" id="mma-Pricing">  
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">MMA</h4>     
+              <h5 class="prices-follow">Includes unlimited Kickboxing, Jiu-Jitsu, Sambo, Judo, Striking, & Yoga classes</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$97/mo with a 12 mo contract</p>
+              <p>$118/mo with a 6 mo contract</p>
+              <p>$150/mo with a month-month agreement</p> 
+            </div>
+          </div>
+          <div class="center col s6"> 
+            <div class="back3">
+              <h4 class="prices-header">CrossFit & MMA</h4>   
+              <h5 class="prices-follow">Includes unlimited CrossFit, <a href="#!">MMA,</a> & Yoga classes</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$135/mo with a 12 mo contract</p>
+              <p>$165/mo with a 6 mo contract</p>
+              <p>$220/mo with a month-month agreement</p> 
+               <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="start.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">Getting Started Has Never Been Easier</h2>
+            </div>
+            <div class="col s6 back center">
+              <p>Sign up for a free week, pick a class that fits your schedule here, bring your workout clothes, and be sure to arrive 15-20 min prior to your class.<br>Never been to an MMA class? That's totally fine! We would suggest attending a beginners kickboxing class or no-gi jiu-jitsu.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+           </div>
+          </div>
+        </div>
+        <div classs="container">
+           <div class="section center">
             <div class="row center">
-              <h5>get started</h5>
-              <p>At Eastside Austin Elite, blah blah blah blah blah </p>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
+              <a href="#" class="btn #006064 cyan darken-4">Get Your Free Week Here</a>
+            </div>
+            <div class="row center">
+              <a href="#" class="btn #006064 cyan darken-4">Sign up for our newsletter!</a>
+            </div>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="container section full">
+          <div class="section">
+            <div class="row center classSchedule">
+              <h3 class="fac">Class Schedule</h3>
+            </div>
+          </div>
+          <div class="section center">
+            <p>Read About Our MMA Trainers Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax"><img src="instructor.jpg"></div>
+          <div class="row ">
+            <div class="col s12">
+              <h2 class="started center">Meet The Team</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="back2 col s6 center">
+              <p>Our MMA instructors are such an integral key to the community that we have fostered at Eastside Austin Elite. We encourage you to read their bios and get to know them as they will be leading you down your training journey.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container section">
+        <p>[Trainer Carosel]</p>
+          <div class="row center">
+            <div class="col s12 center">
+              <!-- <div class="carousel js-flickity"
+                   data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }' >
+                <div class="carousel-cell"><a href="#modal7" class="modal-trigger"><img src="toby.jpg"><p class="trainer">Toby Imada</p></a></div> 
+                <div class="carousel-cell"><a href="#modal8" class="modal-trigger"><img src="derrick.jpg"><p class="trainer">Derrick Garza</p></a></div>
+                <div class="carousel-cell"><a href="#modal9" class="modal-trigger"><img  src="richard.jpg"><p class="trainer">Richard Crenwelge</p></a></div>
+                <div class="carousel-cell"><a href="#modal10" class="modal-trigger"><img src="bryan.jpg"><p class="trainer">Bryan Bell</p></a></div>
+                <div class="carousel-cell"><a href="#modal11" class="modal-trigger"><img src="juan.jpg"><p class="trainer">Juan Gandara</p></a></div>
+            </div> -->
+            <!-- <div id="modal7" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Toby Imada</h4>
+                <p class="popup-p"><strong>Lead Striking Instructor</strong></p>
+                <p class="popup-p">Toby Imada is lead striking and MMA instructor at Eastside Austin Elite. He is an American mixed martial artist of Japanese and Mexican descent and has fought in many MMA organizations since 1998 including Bellator, King of the Cage, IFC, RFA, CFA, and Shootboxing. Imada is most notable for his upset win over Masvidal by way of bizarre inverse triangle choke while Masvidal was standing up and therefore has been acknowledged by many MMA mediums as Submission of the Year 2009. He was also awarded a Bazzie award from Inside MMA on HDNet for the unorthodox submission victory, and Submission of the Year Honors at the World MMA Awards.</p>
+                <p class="popup-p"><strong>SUBMISSION OF THE YEAR 2009 <br>
+                  BAZZIE AWARD FROM INSIDE MMA</strong></p>
+              </div>
+            </div> -->
+            <!-- <div id="modal8" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Derrick Garza</h4>
+                <p class="popup-p"><strong>Lead Grappling Instructor</strong></p>
+                <p class="popup-p">Derrick Garza is lead grappling instructor at Eastside Austin Fitness. He has been involved with martial arts since childhood and joined the Paragon Brazilian Jiu-Jitsu team in 2001. With an eye for technical details and the desire to connect to his students, he began assisting with class instruction almost immediately upon joining. Through his years in jiu-jitsu, he has instructed men, women, and children of all ages. He has helped to spread the art of jiu-jitsu to military personnel, law enforcement officers, and Border Patrol, as well as taught self-defense to women through Rape Prevention and Women’s Empowerment Seminars. He received the coveted black belt in Brazilian Jiu-Jitsu in February 2012 from Aurelio Gallegos, Jr. and Ricardo “Franjinha” Miller.</p>
+                 <p class="popup-p"><strong>BLACK BELT IN BRAZILIAN JIU-JITSU</strong></p>
+              </div>
+            </div> -->
+            <!-- <div id="modal9" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Richard Crenwelge</h4>
+                <p class="popup-p"><strong>Sambo Instructor</strong></p>
+                <p class="popup-p">Richard Crenwelge is the Eastside Austin Elite Russian Sambo instructor. He is a Certified Strength and Conditioning Specialist with the NSCA, and has been training amateur and professional athletes for over 5 years. He has an extensive background in strength sports, himself having trained in powerlifting and Olympic weightlifting, along with a wide variety of wrestling styles. While Richard’ primary art is sambo, he has also trained and competed in BJJ, judo, belt wrestling and sumo. He was on the 2012 USA Sambo Team at the Kharlampiev Memorial in Moscow, Russia and also the 2012 USA Belt Wrestling Team in Ufa, Bashkortostan. He continues to compete overseas several times a year.
+                </p>
+                <p>STRENGTH & CONDITIONING SPECIALIST WITH NSCA</p>
+              </div>
+            </div> -->
+            <!-- <div id="modal10" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Bryan Bell</h4>
+                <p class="popup-p"><strong>Kickboxing Instructor</strong></p>
+                <p class="popup-p">Bryan Bell was born in South Texas and introduced to the sport of fighting by his family. His uncle claimed a few boxing titles and was happy to show Bryan his skill. Bryan was a good observer,and started learning. His journey into the world of fighting and Martial Arts began when he was eight. Bryan has been dedicated to practice ever since and has been actively training for 9 years at age 27. He says that listening to the body and learning when to push and pull is the key to getting healthy. Bryan’s goals as a teacher are to help his students to set reachable goals, and shred them. Bryan say’s, “If you are going to get healthy and get in shape, you might as well learn a skill”. Bryan loves to teach but knows the root of any accomplishment is to keep learning because you can only get better with practice and time.
+                </p>
+              </div>
+            </div> -->
+            <!-- <div id="modal11" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Juan Gandara</h4>
+                <p class="popup-p"><strong>Kickboxing Instructor</strong></p>
+                <p class="popup-p">Juan Gandara is currently a undergraduate at the University of Texas as well as an amateur MMA fighter. He hopes to improve his athletic ability and technique in order to begin competing at the professional level. His background in combative sports includes a combined six years of boxing, submission grappling and BJJ, and Folkstyle and Freestyle wrestling; as well as current instruction under our own Toby Imada, Jason Webster, Derrick Garza, and the rest of the EAE family. Juan enjoys teaching what he knows and helping the Eastside Austin Elite members reach their goals as they in turn help him reach his. When he’s not training or at school Juan spends his time hiking, rock climbing, long boarding, or playing in some catch soccer games at the park.</p>
+              </div>
+            </div> -->
+          </div>
+         </div>
+         <p class="center spaced">Got questions? Ready to train? Our contact details are below!</p>
+         <div class="col s12 center"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax">
+            <img src="final.jpg">
+          </div>
+          <div class="row">
+            <div class="col s12 center"><h3 class="started center">Come Train With Us!</h3></div>
+            <div class="col s6 left back2">
+              <p>We are open 6 days a week and we have over 130 classes a week on our shcedule. We would love for you to come and take a tour, start your free week, or just come and say hi! Got questions before you come? No problem, feel free to call or email us 24/7. 
+            </div>
+          </div>
+          <div class="col s12 center spaced"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+
+      <!-- End of MMA page -->
+
+      <!-- Kids MMA paga -->
+      <div id="KidsMMAPage" class="hide" >
+        <div class="parallax-container">
+            <h5 class="started center valign">Experience The Elite Difference</h5>
+          <div class="parallax"><img src="kidbjj1.jpg"></div>
+        </div>
+        <div class="container section" id="philosophy">
+          <div class="row center">
+            <p>Welcome to Eastside Austin Elite's Kids MMA program. Eastside Elite is dedicated to teaching our students the positive physical and mental attributes associated with Mixed Martial Arts. Our students will build discipline, learn self-control, and improve athleticism through our structured training program.</p>
+            <p>Learn more about our Kids MMA program below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="parallax-container section" id="elited">
+          <div class="row center">
+            <div class="parallax">
+              <img src="kidbjj2.jpg">
+            </div>
+            <h3 class="started">Why MMA?</h3>
+            <div class="col s6 back">
+              <p>Our elite team of instructors will incorporate warm ups, game-based drills, and general physical fitness in an inviting atmosphere. We believe in introducing children to a fun, friendly, and safe environment where they learn the principles of Brazilian Jiu-Jitsu, Muay Thai, and self-defense while building self-esteem and character.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container full section " id="started">
+          <h3 class="started2 center">Why EAE?</h3>
+            <div class="back2 center">              
+              <p class="whyEAE">You won't find anything like our MMA facility in Austin. Our kids program takes place on a state of the art 3,000 sqft, fully air conditioned grappaling floor. Through our dedicated and highly experienced staff your child will develop important life skills such as Increased self-discipline, respect, non-violent conflict resolution, and team work skills.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="parallax"><img src="kidbjj3.jpg"></div>
+        </div>
+        <div class="container" >
+          <div class="section">
+            <div class="row">
+              <div class="col s12 m4 l4" >
+                <div class="icon-block center">
+                  <i class=" center fa fa-money fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">Prices</h5>
+                    <p class="center">Simply put, we are the best deal in town. We strive to provide an excellent experience for a fair price. Check out our prices below and be sure to <a href="#!">subscribe</a> to our Newsletter to get exclusive deals!</p>
+                </div> 
+              </div>
+              <div class="col s12 m4 l4">
+                <div class="icon-block center">
+                <i class="center fa fa-spinner fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">A Complete Training Experience</h5>
+                    <p class="center">We want to make sure that your child is learning a lot when they come to train with us, however we also want them to have fun! Our program combines the best of both worls, leaving kids with an exhausted simile on thier faces when they leave. We als offer a jiu-jitsu stripe and belt system, everyone is encouraged to develop personal goals and work with our instructos to achive them.</p>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 " >
+                <div class="icon-block center">
+                <i class="center fa fa-arrows-alt fa-2x" aria-hidden="true"></i>
+                 <h5 class="center fac">Open to Everyone!</h5>
+                   <p class="center">Our program is currently accepting boys and girls ages 7-14, no matter the experience level. We have classes every Monday, Wednesday, and Friday at 5pm. We encourage all of our members (even our little ones) to try us out for a <a href="#">free week</a>, just to make sure we're a complimentary fit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="center">
+            <p>Checkout Our Unbeatable Prices Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="belt.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">Always on the belt {hunt}</h2>
+              <p>check out our blog to learn more</p>
+              <a class="btn">EAE Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container section" id="mma-Pricing">  
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">Kids MMA</h4>     
+              <h5 class="prices-follow">Includes 3 MMA classes a week (MWF 5pm), a Gi, and free rentals for boxing equipment</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$99 Registration Fee</p>
+              <p>$107/mo with a month-month agreement</p> 
+            </div>
+          </div>
+          <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="kidbjj4.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">Getting Started Has Never Been Easier</h2>
+            </div>
+            <div class="col s6 back center">
+              <p>Sign up for a free week, pick a class that fits your schedule here, bring your workout clothes, and be sure to arrive 15-20 min prior to your class.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+           </div>
+          </div>
+        </div>
+        <div class="container">
+           <div class="section center">
+            <div class="row center">
+              <a href="#" class="btn #006064 cyan darken-4">Get Your Free Week Here</a>
+            </div>
+            <div class="row center">
+              <a href="#" class="btn #006064 cyan darken-4">Sign up for our newsletter!</a>
+            </div>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="container section full">
+          <div class="section">
+            <div class="row center classSchedule">
+              <h3 class="fac">Class Schedule</h3>
+            </div>
+          </div>
+          <div class="section center">
+            <p>Read About Our MMA Trainers Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax"><img src="instructor.jpg"></div>
+          <div class="row ">
+            <div class="col s12">
+              <h2 class="started center">Meet The Team</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="back2 col s6 center">
+              <p>Our MMA instructors such an integral key to the community that we have fostered at Eastside Austin Elite. We encourage you to read their bios and get to know them as they will be leading you down your training journey.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container section">
+          <p>[Trainer Carosel]</p>
+          <!-- <div class="row center">
+            <div class="col s12 center">
+              <div class="carousel js-flickity"
+                   data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }' >
+                <div class="carousel-cell"><a href="#modal8" class="modal-trigger"><img src="derrick.jpg"><p class="trainer">Derrick Garza</p></a></div>
+                <div class="carousel-cell"><a href="#modal10" class="modal-trigger"><img src="bryan.jpg"><p class="trainer">Bryan Bell</p></a></div>
+            </div>
+            <div id="modal8" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Derrick Garza</h4>
+                <p class="popup-p"><strong>Lead Grappling Instructor</strong>
+                <p class="popup-p">Derrick Garza is lead grappling instructor at Eastside Austin Fitness. He has been involved with martial arts since childhood and joined the Paragon Brazilian Jiu-Jitsu team in 2001. With an eye for technical details and the desire to connect to his students, he began assisting with class instruction almost immediately upon joining. Through his years in jiu-jitsu, he has instructed men, women, and children of all ages. He has helped to spread the art of jiu-jitsu to military personnel, law enforcement officers, and Border Patrol, as well as taught self-defense to women through Rape Prevention and Women’s Empowerment Seminars. He received the coveted black belt in Brazilian Jiu-Jitsu in February 2012 from Aurelio Gallegos, Jr. and Ricardo “Franjinha” Miller.</p>
+                 <p class="popup-p"><strong>BLACK BELT IN BRAZILIAN JIU-JITSU</strong></p></p>
+              </div>
+            </div>
+            <div id="modal10" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Bryan Bellr</h4>
+                <p class="popup-p"><strong>Kickboxing Instructor</strong>
+                <p class="popup-p">Bryan Bell was born in South Texas and introduced to the sport of fighting by his family. His uncle claimed a few boxing titles and was happy to show Bryan his skill. Bryan was a good observer,and started learning. His journey into the world of fighting and Martial Arts began when he was eight. Bryan has been dedicated to practice ever since and has been actively training for 9 years at age 27. He says that listening to the body and learning when to push and pull is the key to getting healthy. Bryan’s goals as a teacher are to help his students to set reachable goals, and shred them. Bryan say’s, “If you are going to get healthy and get in shape, you might as well learn a skill”. Bryan loves to teach but knows the root of any accomplishment is to keep learning because you can only get better with practice and time.
+                </p>
+              </div>
+            </div>
+          </div>
+         </div> -->
+         <p class="center spaced">Got questions? Ready to train? Our contact details are below!</p>
+         <div class="col s12 center"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax">
+            <img src="kidbjj5.jpg">
+          </div>
+          <div class="row">
+            <div class="col s12 center"><h3 class="started center">Come Train With Us!</h3></div>
+            <div class="col s6 left back2">
+              <p>We offer classes every Monday, Wednesday, Friday at 5pm. We would love for you to come and take a tour, start your free week, or just come and say hi! Got questions before you come? No problem, feel free to call or email us 24/7. 
+            </div>
+          </div>
+          <div class="col s12 center spaced"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <!-- End of Kids page -->
+
+      <!-- Personal Training page -->
+      <div id="PersonalTrainingPage" class="hide">
+        <div class="parallax-container">
+            <h5 class="started center valign">Take Your Training to the Next Level</h5>
+          <div class="parallax"><img src="kip.jpg"></div>
+        </div>
+        <div class="container section" id="philosophy">
+          <div class="row center">
+            <p>Welcome to Eastside Austin Elite's  personal training program. If you are interested in getting the best results in a fast and efficient manner, then our health assessments and personal training might be right for you. Whether you are aspiring to loss some weight, compete in an upcoming CrossFit competition, or become the next best MMA fighter, our experienced staff can help you get the results you want.</p>
+            <p>Learn more about our Personal Training program below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="parallax-container section" id="elited">
+          <div class="row center">
+            <div class="parallax">
+              <img src="mma2.jpg">
+            </div>
+            <h3 class="started">Why personal training?</h3>
+            <div class="col s6 back">
+              <p>We all know the value of our group classes but if you decide it is time to get more serious about your training, then it's time for personal training. Whatever your needs may be, our coaches and instructors can program specifically for you and give you the undivided attention you need. Whatever your goals are as an athlete, we want to help you meet and exceed.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container full section " id="started">
+          <h3 class="started2 center">Why EAE?</h3>
+            <div class="back2 center">              
+              <p class="whyEAE">You won't find anything like our facility in Austin. Our personal training clients get to take advantage of the largest gym (12,000 sq. ft.) of this type in Austin built out specifically for our programs. Our trainers will give you a challenging and effective workout every session, sending you home with an exhausted smile.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="parallax"><img src="squat.jpg"></div>
+        </div>
+        <div class="container" >
+          <div class="section">
+            <div class="row">
+              <div class="col s12 m4 l4" >
+                <div class="icon-block center">
+                  <i class=" center fa fa-money fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">Prices</h5>
+                    <p class="center">Simply put, we are the best deal in town. We strive to provide an excellent experience for a fair price. Check out our prices below and be sure to <a href="#!">subscribe</a> to our Newsletter to get exclusive deals!</p>
+                </div> 
+              </div>
+              <div class="col s12 m4 l4">
+                <div class="icon-block center">
+                <i class="center fa fa-spinner fa-2x" aria-hidden="true"></i>
+                  <h5 class="center fac">Excellent Trainers</h5>
+                    <p class="center">Our personal training team also has a large variety of specializations that can meet the need of every client. Whether you want to master the fundamentals of kickboxing, prepare for a marathon, compete in a CrossFit competition, or take your MMA training to the next level, we have the trainner for you.</p>
+                </div>
+              </div>
+              <div class="col s12 m4 l4 " >
+                <div class="icon-block center">
+                <i class="center fa fa-arrows-alt fa-2x" aria-hidden="true"></i>
+                 <h5 class="center fac">Bench Marks</h5>
+                   <p class="center">No matter where you want to go, you need to know where you are starting out. Although it's not required, we suggest that all of our personal training clients purchase and complete a health or performance assessment. Your trainer will be able to go over the results with you and determine a plan of action and a plan to reassess in the future.</p>
+                </div>
+              </div>
+            </div>
+            <div class="center">
+            <p>Checkout Our Unbeatable Prices Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="hand.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">We're More Than Just A Gym</h2>
+              <p>check out our blog to learn more</p>
+              <a class="btn">EAE Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container section" id="mma-Pricing">  
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">Personal Training</h4>     
+              <h5 class="prices-follow">Sessions are 1 hour with a complimentary intro consultation session.</h5>
+            </div>
+            <div class="prices-list">
+              <p>$65/session for Non-Members</p>
+              <p>15% off when you buy 10+ sessions</p> 
+            </div>
+          </div>
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">The {Elite} Package</h4>     
+              <h5 class="prices-follow">Designed for athletes that wish to benefit from our group classes, personal training, and performance testing. </h5>
+            </div>
+            <div class="prices-list">
+              <p>$88/mo for Unlimited CrossFit or MMA Classes for 12 months</p>
+              <p>$90 for 2 Performance tests (%40 discount)</p>
+              <p>5 personal training sessions $277</p>
+            </div>
+          </div>
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">Health Assessment</h4>     
+              <h5 class="prices-follow">For athletes focused on general health improvement and their well being.</h5>
+            </div>
+            <div class="prices-list">
+              <p>$100 for Non-Members</p>
+              <p>$75 for Non-Members</p> 
+            </div>
+          </div>
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">Performance Assessment</h4>     
+              <h5 class="prices-follow">For athletes focused on general health improvement and their well being.</h5>
+            </div>
+            <div class="prices-list">
+              <p>$150 for Non-Members</p>
+              <p>$75 for Non-Members</p> 
+            </div>
+          </div>
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">Resting Metabolic Rate</h4>     
+              <h5 class="prices-follow">This gives you the number of calories you can eat per day, without exercising, to not gain or lose any weight. So, simply put: how many calories your body needs to stay alive. From this value we can adjust your daily intake if you’re eating too much or not enough</h5>
+            </div>
+            <div class="prices-list">
+              <p>$75 as a stand alone test</p>
+              <p>$50 as an additional test</p> 
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container section center">
+          <div class="parallax"><img src="tire.jpg"></div>
+          <div class="row">
+            <div class="col s6 center ">
+              <h2 class="started">Getting Started Has Never Been Easier</h2>
+            </div>
+            <div class="col s6 back center">
+              <p>Fill out the contact form below with what you are hoping to gain from personal training as well as any requests in regaurds to the trainer or the time. We'll get back to you asap with trainers that might fit your needs!</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+           </div>
+          </div>
+        </div>
+        <div class="container section ">
+          <div class="section">
+            <div class="col s12 m6 l6 center">
+              <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+              <h5 class="center fac">Let's Find Your Perfect Trainer</h5>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name"><p>First Name</p></label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name"><p>Last Name</p></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email"><p>Email</p></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="phone_number" type="text" class="validate">
+                    <label for="phone_number"><p>Phone Number</p></label>
+                  </div>
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected></option>
+                      <option value="1">CrossFit</option>
+                      <option value="2">MMA</option>
+                      <option value="3">Strength and Condtioning</option>
+                      <option value="4">Running</option>
+                    </select>
+                    <label><p>What Program Are You Interested In?</p></label>
+                  </div>
+                  <div class="input-field col s12">
+                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                    <label for="textarea1"><p>What goal are you working on?</p></label>
+                  </div>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">  Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="section center">
+            <p>Read About Our MMA Trainers Below</p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax"><img src="instructor.jpg"></div>
+          <div class="row ">
+            <div class="col s12">
+              <h2 class="started center">Meet The Team</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="back2 col s6 center">
+              <p>Our MMA and CrossFit instructors are such an integral key to the community that we have fostered at Eastside Austin Elite. We encourage you to read their bios and get to know them as they will be leading you down your training journey.</p>
+              <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container section">
+         <p>[Trainer Carosel]</p>
+          <!-- <div class="row center">
+            <div class="col s12 center">
+              <div class="carousel js-flickity"
+                   data-flickity-options='{ "imagesLoaded": true, "percentPosition": false }' >
+                <div class="carousel-cell"><a href="#modal1" class="modal-trigger"><img src="bri.jpg"><p class="trainer">Brianna Larson</p></a></div> 
+                <div class="carousel-cell"><a href="#modal2" class="modal-trigger"><img src="vince.jpg"><p class="trainer">Vince Barbosa</p></a></div>
+                <div class="carousel-cell"><a href="#modal3" class="modal-trigger"><img  src="Justin.jpg"><p class="trainer">Justin Kerr</p></a></div>
+                <div class="carousel-cell"><a href="#modal4" class="modal-trigger"><img src="katie.jpg"><p class="trainer">Katie Fincher</p></a></div>
+                <div class="carousel-cell"><a href="#modal5" class="modal-trigger"><img src="sean.jpg"><p class="trainer">Sean McEachern</p></a></div>
+                <div class="carousel-cell"><a href="#modal6" class="modal-trigger"><img src="ashley.jpg"><p class="trainer">Ashley Rollins</p></a></div>
+                <div class="carousel-cell"><a href="#modal7" class="modal-trigger"><img src="toby.jpg"><p class="trainer">Toby Imada</p></a></div> 
+                <div class="carousel-cell"><a href="#modal8" class="modal-trigger"><img src="derrick.jpg"><p class="trainer">Derrick Garza</p></a></div>
+                <div class="carousel-cell"><a href="#modal9" class="modal-trigger"><img  src="richard.jpg"><p class="trainer">Richard Crenwelge</p></a></div>
+                <div class="carousel-cell"><a href="#modal10" class="modal-trigger"><img src="bryan.jpg"><p class="trainer">Bryan Bell</p></a></div>
+                <div class="carousel-cell"><a href="#modal11" class="modal-trigger"><img src="juan.jpg"><p class="trainer">Juan Gandara</p></a></div>
+            </div>
+            <div id="modal1" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Brianna Larson</h4>
+                <p class="popup-p"><strong>CrossFit Instructor</strong></p>
+                <p class="popup-p">Brianna was born and raised in Texas and is currently completing her undergraduate degree at Texas State University. She has always been involved in sports and related activities from competitive cheerleading to track and field. In May 2011, she was introduced to CrossFit in San Marcos and has loved it ever since. Brianna successfully completed the CrossFit Level 1 Trainer Course in August 2013. Bri believes CrossFit is more than just a place to workout….it’s a community that continually encourages everyone to challenge themselves physically, mentally and emotionally. Outside of the gym, Bri enjoys cooking, baking, hiking, time with family and friends, bacon, and anything involving the sunshine.</p>
+                <p class="popup-p"><strong>CrossFit Level 1 Instructor</strong></p>
+              </div>
+            </div>
+            <div id="modal2" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Vince Barbosa</h4>
+                <p class="popup-p"><strong>Lead CrossFit Instructor & Manager</strong>
+                <p class="popup-p">Vince Barbosa is an Eastside Austin Elite CrossFit instructor. He is a CrossFit Level 1 Trainer and a nationally registered Paramedic. He is a prior USAF Pararescueman. While deployed he participated in a series of joint Operations, including direct assaults and combat search and rescue missions. His team also participated in disaster relief efforts and humanitarian missions Stateside. You can find him in the weight room or on the mat training jiu-jitsu as part of our competition team. Vince focuses on the positive to help our members improve their capability and have a good time!
+                 <p class="popup-p"><strong>REGISTERED PARAMEDIC<br>USAF PARA RESCUE</strong></p></p>
+              </div>
+            </div>
+            <div id="modal3" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Justin Kerr</h4>
+                <p class="popup-p"><strong>CrossFit Level 1 Instructor</strong>
+                <p class="popup-p">Justin Kerr is born and raised in Austin, TX and has successfully passed and completed the CF-L1 Course. His future goals with CrossFit are to gain more certifications in Gymnastics, Kids, and Olympic lifting. He was introduced to CrossFit in 2012 but didn’t start actively training CrossFit until June 2013. His first competition was Nasty Girls at a local event back in February 2013. Just like any other person exposed to CrossFit, he was exhausted and had the adrenaline feeling during and after the WOD. He also enjoys the community aspect that CrossFit brings to every box. He believes that anything is possible when you work hard for it. In pursuit of being an instructor, he enjoys helping others to be better with life. Things outside the gym, he likes to have active rest days by running, road biking, kayaking, and paddle boarding out about Town Lake.
+                </p>
+              </div>
+            </div>
+            <div id="modal4" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Katie Fincher</h4>
+                <p class="popup-p"><strong>CrossFit Instructor</strong>
+                <p class="popup-p">"I have a passion for showing people that they are capable of pushing themselves more than they ever though possible. Be Brave, Be Strong, & Be Humble."
+                From the day Katie found CrossFit she was hooked. Her goals continue to drive her training. She is committed to helping members set and reach their own goals. She believes that fitness is a lifestyle that is within the reach of everyone. And balance is critical for successful long term lifestyle changes. Balance when learned and implemented, makes you constantly set new limits.
+                <strong>CROSSFIT KETTLE BELL, CROSSFIT GYMNASTICS, AND CROSSFIT MOBILITY CERTIFICATIONS.</strong></p>
+              </div>
+            </div>
+            <div id="modal5" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Sean McEachern</h4>
+                <p class="popup-p"><strong>CrossFit Level 1 Instructor</strong>
+                <p class="popup-p">Sean is Marine Corps veteran, Infantry Machine Gunner by trade but was also a Martial Arts Instructor . He is currently a student at Texas State Univ. studying Exercise and Sports Science (Pre Physical Therapy). Sean has a love for teaching and CrossFit allows him to make a change in people’s life that will have a lasting effect.</p>
+              </div>
+            </div>
+            <div id="modal6" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Ashley Rollins</h4>
+                <p class="popup-p"><strong>Running and Fitness Personal Trainer</strong>
+                <p class="popup-p">Ashley Rollins is a certified personal trainer at Eastside Austin Elite. Originally born and raised in Chicago, Illinois, Ashley came down to Austin to escape the arctic winters and developed a deep love for running and fitness. She received her certification from WITS at the University of Texas in October 2015. Ashley has also been coaching marathoners since 2011 and uses her knowledge of endurance athletes to create functional fitness plans for all levels. Her love of education is boundless -- She is currently working towards several advanced certifications in nutrition and strength and conditioning.
+                </p>
+              </div>
+            </div>
+            <div id="modal7" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Toby Imada</h4>
+                <p class="popup-p"><strong>Lead Striking Instructor</strong></p>
+                <p class="popup-p">Toby Imada is lead striking and MMA instructor at Eastside Austin Elite. He is an American mixed martial artist of Japanese and Mexican descent and has fought in many MMA organizations since 1998 including Bellator, King of the Cage, IFC, RFA, CFA, and Shootboxing. Imada is most notable for his upset win over Masvidal by way of bizarre inverse triangle choke while Masvidal was standing up and therefore has been acknowledged by many MMA mediums as Submission of the Year 2009. He was also awarded a Bazzie award from Inside MMA on HDNet for the unorthodox submission victory, and Submission of the Year Honors at the World MMA Awards.</p>
+                <p class="popup-p"><strong>SUBMISSION OF THE YEAR 2009 <br>
+                  BAZZIE AWARD FROM INSIDE MMA</strong></p>
+              </div>
+            </div>
+            <div id="modal8" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Derrick Garza</h4>
+                <p class="popup-p"><strong>Lead Grappling Instructor</strong>
+                <p class="popup-p">Derrick Garza is lead grappling instructor at Eastside Austin Fitness. He has been involved with martial arts since childhood and joined the Paragon Brazilian Jiu-Jitsu team in 2001. With an eye for technical details and the desire to connect to his students, he began assisting with class instruction almost immediately upon joining. Through his years in jiu-jitsu, he has instructed men, women, and children of all ages. He has helped to spread the art of jiu-jitsu to military personnel, law enforcement officers, and Border Patrol, as well as taught self-defense to women through Rape Prevention and Women’s Empowerment Seminars. He received the coveted black belt in Brazilian Jiu-Jitsu in February 2012 from Aurelio Gallegos, Jr. and Ricardo “Franjinha” Miller.</p>
+                 <p class="popup-p"><strong>BLACK BELT IN BRAZILIAN JIU-JITSU</strong></p></p>
+              </div>
+            </div>
+            <div id="modal9" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Richard Crenwelge</h4>
+                <p class="popup-p"><strong>Sambo Instructor</strong>
+                <p class="popup-p">Richard Crenwelge is the Eastside Austin Elite Russian Sambo instructor. He is a Certified Strength and Conditioning Specialist with the NSCA, and has been training amateur and professional athletes for over 5 years. He has an extensive background in strength sports, himself having trained in powerlifting and Olympic weightlifting, along with a wide variety of wrestling styles. While Richard’ primary art is sambo, he has also trained and competed in BJJ, judo, belt wrestling and sumo. He was on the 2012 USA Sambo Team at the Kharlampiev Memorial in Moscow, Russia and also the 2012 USA Belt Wrestling Team in Ufa, Bashkortostan. He continues to compete overseas several times a year.
+                </p>
+                <p>STRENGTH & CONDITIONING SPECIALIST WITH NSCA</p>
+              </div>
+            </div>
+            <div id="modal10" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Bryan Bell</h4>
+                <p class="popup-p"><strong>Kickboxing Instructor</strong>
+                <p class="popup-p">Bryan Bell was born in South Texas and introduced to the sport of fighting by his family. His uncle claimed a few boxing titles and was happy to show Bryan his skill. Bryan was a good observer,and started learning. His journey into the world of fighting and Martial Arts began when he was eight. Bryan has been dedicated to practice ever since and has been actively training for 9 years at age 27. He says that listening to the body and learning when to push and pull is the key to getting healthy. Bryan’s goals as a teacher are to help his students to set reachable goals, and shred them. Bryan say’s, “If you are going to get healthy and get in shape, you might as well learn a skill”. Bryan loves to teach but knows the root of any accomplishment is to keep learning because you can only get better with practice and time.
+                </p>
+              </div>
+            </div>
+            <div id="modal11" class="modal center">
+              <div class="modal-content center">
+                <h4 class="popup-header">Juan Gandara</h4>
+                <p class="popup-p"><strong>Kickboxing Instructor</strong>
+                <p class="popup-p">Juan Gandara is currently a undergraduate at the University of Texas as well as an amateur MMA fighter. He hopes to improve his athletic ability and technique in order to begin competing at the professional level. His background in combative sports includes a combined six years of boxing, submission grappling and BJJ, and Folkstyle and Freestyle wrestling; as well as current instruction under our own Toby Imada, Jason Webster, Derrick Garza, and the rest of the EAE family. Juan enjoys teaching what he knows and helping the Eastside Austin Elite members reach their goals as they in turn help him reach his. When he’s not training or at school Juan spends his time hiking, rock climbing, long boarding, or playing in some catch soccer games at the park.</p>
+              </div>
+            </div>
+          </div>
+         </div> -->
+         <p class="center spaced">Got questions? Ready to train? Our contact details are below!</p>
+         <div class="col s12 center"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+        <div class="parallax-container section">
+          <div class="parallax">
+            <img src="group.jpg">
+          </div>
+          <div class="row">
+            <div class="col s12 center"><h3 class="started center">Come Train With Us!</h3></div>
+          </div>
+          <div class="col s12 center spaced"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <!-- Contact Us Page -->
+      <div class="container hide" id="ContactUsPage">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m4 l4" >
+              <div class="icon-block center">
+                <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                <h5 class="center fac">Call Us</h5>
+                  <p class="center"><a href="tel:15124990998">512-499-0998</a></p>
+              </div> 
+            </div>
+            <div class="col s12 m4 l4" >
+              <div class="icon-block center">
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <h5 class="center fac">Email Us</h5>
+                  <p class="center"><a href="mailto:info@eastsideaustinelite.com">info@eastsideaustinelite.com</a></p>
+              </div> 
+            </div>
+            <div class="col s12 m4 l4" >
+              <div class="icon-block center">
+                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                <h5 class="center fac">Come Visit Us</h5>
+                  <p class="center"><a href="https://www.google.com/maps/place/Eastside+Austin+Elite/@30.258151,-97.7131607,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b5cc5ac5cef7:0xabe1135b581463f!8m2!3d30.258151!4d-97.710972">507 Calles St, Suite 112, Austin, TX, 78702</a></p>
+              </div> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 l6 center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13784.73387539868!2d-97.7145154!3d30.2603533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5cc5ac5cef7%3A0xabe1135b581463f!2sEastside+Austin+Elite!5e0!3m2!1sen!2sus!4v1464742037158" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col s12 m6 l6 center">
+              <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+              <h5 class="center fac">Drop Us A Line</h5>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name"><p>First Name</p></label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name"><p>Last Name</p></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email"><p>Email</p></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="phone_number" type="text" class="validate">
+                    <label for="phone_number"><p>Phone Number</p></label>
+                  </div>
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected></option>
+                      <option value="1">Another Client</option>
+                      <option value="2">Social Media</option>
+                      <option value="3">Yelp</option>
+                      <option value="4">Google</option>
+                    </select>
+                    <label><p>How Did You Hear About us?</p></label>
+                  </div>
+                  <div class="input-field col s12">
+                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                    <label for="textarea1"><p>How Can We Help You?</p></label>
+                  </div>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">  Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- <footer class="page-footer" id="foot" >
-    <div class="footer-copyright" >
-      <div class="container" id="all">
-       <div class="col s12 ">
-      All Rights Reserved 2016 <a href="#"> Gina Cave Edwards</a> // 512-354-6625 <a class="right-align" href="osrcreative.com">   An OSR Creative Production </a>
+     <!--  End of Contact Us Page -->
+
+     <!-- Pricing Page -->
+      <div class="parallax-container section hide" id="PricingPage">
+          <div class="center col s6"> 
+            <div class="back3">
+              <h4 class="prices-header">CrossFit Fundamentals</h4>   
+              <h5 class="prices-follow">Includes two small group sessions. This class is not required to start taking CrossFit classes at EAE, however for safety reasons, it's highly recommended before you start your training regimine with us.</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$40</p>
+            </div>
+          </div>
+          <div class="center col s6"> 
+            <div class="back3">
+              <h4 class="prices-header">CrossFit Fitness Track</h4>   
+              <h5 class="prices-follow">Includes unlimited CrossFit and Yoga classes</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$97/mo with a 12 mo contract</p>
+              <p>$118/mo with a 6 mo contract</p>
+              <p>$150/mo with a month-month agreement</p> 
+            </div>
+          </div>
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">CrossFit Performance Team</h4>     
+              <h5 class="prices-follow">Includes unlimited CrossFit, CrossFit Competitors, Olympic Lifting, & Yoga classes {Instructor Permission Required}</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$152/mo with a 12 mo contract</p>
+              <p>$173/mo with a 6 mo contract</p>
+              <p>$205/mo with a month-month agreement</p>
+            </div>
+          </div>
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">MMA</h4>     
+              <h5 class="prices-follow">Includes unlimited Kickboxing, Jiu-Jitsu, Sambo, Judo, Striking, & Yoga classes</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$97/mo with a 12 mo contract</p>
+              <p>$118/mo with a 6 mo contract</p>
+              <p>$150/mo with a month-month agreement</p> 
+            </div>
+          </div>
+          <div class=" center col s6">
+            <div class="back3">
+              <h4 class="prices-header">Kids MMA</h4>     
+              <h5 class="prices-follow">Includes 3 MMA classes a week (MWF 5pm), a Gi, and free rentals for boxing equipment</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$99 Registration Fee</p>
+              <p>$107/mo with a month-month agreement</p> 
+            </div>
+          </div>
+          <div class="center col s6"> 
+            <div class="back3">
+              <h4 class="prices-header">CrossFit & MMA</h4>   
+              <h5 class="prices-follow">Includes unlimited CrossFit,  Kickboxing, Jiu-Jitsu, Sambo, Judo, Striking, & Yoga classes</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$135/mo with a 12 mo contract</p>
+              <p>$165/mo with a 6 mo contract</p>
+              <p>$220/mo with a month-month agreement</p> 
+            </div>
+          </div>
+          <div class="center col s6"> 
+            <div class="back3">
+              <h4 class="prices-header">Personal Training</h4>   
+              <h5 class="prices-follow">Each session is ~60 min and comes with a complimentatry consultation. Checkout our <a href="#!">personal training</a> page to schedule a consultation and meet our personal training team!</h5>
+            </div> 
+            <div class="prices-list">
+              <p>$65/session</p>
+              <p>Buy a 10 pack and recieve 15% off</p>
+            </div>
+          </div>
       </div>
+     <!-- End of Pricing Page -->
+
+     <!-- Blogs and WODs -->
+     <div id="BlogsPage" class="hide">
+        <div class="container">
+            <h5 class="started center valign">Blogs & WODs</h5>
+        </div>
+        <div class="container section" id="philosophy">
+          <div class="row center">
+            <p>To say we're just a gym would be an understatement. We like to think of ourselves as a big crazy, supportive, and fun Eastside family. Our blogs can give you a good idea of events, new programs, and our philosphies. Want to write about your training experience with us and become a #celebrity blogger on our site? <a href="mailto:info@eastsideaustinelite.com">Email us!</a></p>
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="parallax-container center">
+          <h5 class="blog-header">EAE Blog</h5> 
+          <div class="parallax"><img src="boxjump.jpg"></div>
+        </div> 
+        <div class="container center">
+          <div class="row">
+            <div class="col s4">
+              <h5 class="blog-date">March 25</h5>
+            </div>
+            <div class="col s8">
+              <h4 class="blog-title">CrossFit Performance!</h4>
+            </div>
+          </div >
+          <div class="row">
+            <p>Eastside Austin Elite is please to announce our new CrossFit Performance Program.  This new program is result of feedback from our members and the growing maturity of our CrossFit efforts as a whole...<a>read more</a></p>
+          </div>
+        </div> 
+        <div class="parallax-container center">
+          <h5 class="blog-header">WODs</h5> 
+          <div class="parallax"><img src="tire.jpg"></div>
+        </div>
+        <div class="container center">
+          <div class="row">
+            <div class="col s4">
+              <h5 class="blog-date">May 27th</h5>
+            </div>
+            <div class="col s8">
+              <h4 class="blog-title">TGIF</h4>
+            </div>
+          </div >
+          <div class="row">
+            <p>Run 800m, Row 800m, Run more</p>
+          </div>
+        </div> 
+     </div>
+     <!-- End of Blog and WODs -->
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text footHead">Eastside Austin Elite</h5>
+          <a href="http://instagram.com/eliteatx"><i class="fa fa-instagram insta fa-2x" aria-hidden="true"></i></a>
+          <a href="http://facebook.com/eastsideaustinelite"><i class="fa fa-facebook-official insta fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!"><p>Programs</p></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><p>Contact Us</p></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><p>Pricing</p></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><p>Class Schedule</p></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </footer> -->
+    <div class="footer-copyright">
+      <div class="container">
+      © 2016 Eastside Austin Elite
+      <a class="grey-text text-lighten-4 right" href="#!"><p>Home</p></a>
+      </div>
+    </div>
+  </footer>
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
   <script src="./js/materialize.js"></script>
   <script src="./js/init.js"></script>
 

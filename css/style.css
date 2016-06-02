@@ -13,14 +13,41 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
-
+.insta{
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
 .button-collapse {
   color: black;
 }
 
 .navbar{
   background-color: transparent;
+}
+#slide-out{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.side-nav a{
+  color:white;
+}
+.slide-out-button{
+  padding:0px;
+  margin: 0px;
+}
+#mainTitle{
+  margin-top: 0px;
+}
+.move-down{
+  padding-top: 10px;
+}
+.free-week{
+  margin-bottom: 7px;
+}
+.list-bottom{
+  padding-bottom: 20px;
 }
 .parallax-container {
   min-height: 380px;
@@ -68,18 +95,163 @@ footer.page-footer {
 
 #crossfitRow{
   background-image: url("http://mrgaleano.weebly.com/uploads/3/7/6/7/37676609/6352727_orig.jpg");
-  height: 75px;
+  height: 70px;
 
 }
 #mmaRow{
   background-image: url("http://www.doubledragon.com.au/img/kickboxing/double-dragon-kickboxing-muay-thai08.jpg");
-  height: 75px;
-  
+  height: 70px;
 }
 #kidRow{
   background-image: url("http://kellysmma.com/wp-content/uploads/2015/08/IMG_5276.jpg");
-  height: 75px;
+  height: 70px;
 }
 .toc{
   position: fixed;
+}
+.lead-header{
+   font-family: 'Alegreya Sans SC', sans-serif;
+   letter-spacing: 8px;
+   font-weight: 100;
+   font-size:35px;
+}
+.lead-tag{
+  font-family: 'Alegreya Sans SC', sans-serif;
+   letter-spacing: 6px;
+   font-weight: 300;
+   font-size:13px;
+}
+.tagline{
+ font-family: 'Cutive Mono' ;
+ font-size: 16px;
+}
+.header-scroll{
+  color: white;
+  padding-top: 40px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+.blog-header{
+  color: white;
+  padding-top: 70px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+.back {
+  background-color: rgba(251,95,2,.8);
+  font-size: 18px;
+
+}
+#elited{
+  margin-bottom: 10px;
+}
+.back2{
+  background-color: rgba(0,144,255,0.7);
+  font-size: 16px;
+}
+.whyEAE{
+  margin-top:0px;
+}
+.fac{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+}
+.prices-header{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #263238;
+  font-size:28px;
+}
+.prices-follow{
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #263238;
+}
+.back3{
+  background-color: rgba(249,254,126,0.9);
+}
+.prices-list{
+  color: black;
+}
+.started{
+  font-family: 'Cutive Mono' ;
+  font-size: 35px;
+}
+.started2{
+  font-family: 'Cutive Mono' ;
+  font-size: 28px;
+  margin:0px;
+}
+.blog-title{
+  font-family: 'Cutive Mono' ;
+  font-size: 22px;
+  margin:0px;
+  color: rgba(251,95,2,1);
+}
+.blog-date{
+  font-family: 'Cutive Mono' ;
+  font-size: 15px;
+  margin: 10px;
+  color: rgba(0,144,255,.8);
+}
+.news{
+  font-family: 'Pompiere', cursive;
+  background-color: #556f7c;
+  color: white;
+}
+.free{
+  border:3px solid #556f7c;
+  color: #556f7c;
+  font-family: 'Cutive Mono' ;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.classSchedule{
+  color: rgba(251,95,2,.9);
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+}
+.carousel-cell {
+  margin-right: 5px;
+
+}
+.popup-header{
+  color: black;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+.popup-p{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #263238;
+}
+.trainer{
+  color: black;
+}
+.btn{
+  font-family: 'Pompiere', cursive;
+}
+.spaced{
+  margin-top: 40px;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+footer.page-footer{
+  background-color: #263238;
+}
+.footHead{
+  font-family: 'Cutive Mono' ;
+  font-size:18px;
+}
+#logo{
+  max-width: 30%;
+}
+.hide{
+  display: none;
 }
